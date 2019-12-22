@@ -1,0 +1,84 @@
+<wsdl:definitions xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ws1.unict.it/stdata/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://ws1.unict.it/stdata/">
+    <wsdl:types>
+        <s:schema elementFormDefault="qualified" targetNamespace="http://ws1.unict.it/stdata/">
+            <s:element name="TB_GetYears">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_GetYearsResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TB_GetYearsResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_GetDepartments">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="aa" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_GetDepartmentsResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TB_GetDepartmentsResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_GetDepartmentContent">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="aa" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_GetDepartmentContentResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TB_GetDepartmentContentResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_GetCourses">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="aa" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_GetCoursesResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TB_GetCoursesResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_CheckSubscription">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="token" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="aa" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="course" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="TB_CheckSubscriptionResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="TB_CheckSubscriptionResult" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+        </s:schema>
+        </wsdl:types>
+</wsdl:definitions>
